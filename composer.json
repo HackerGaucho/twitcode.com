@@ -1,6 +1,7 @@
 {
     "require": {
         "catfan/medoo": "^2.1",
-        "phpmyadmin/motranslator": "^5.3"
+        "phpmyadmin/motranslator": "^5.3",
+        "erusev/parsedown": "^1.7"
     }
 }

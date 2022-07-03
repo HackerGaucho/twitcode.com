@@ -71,6 +71,16 @@ class ComposerStaticInit6c76dd7726ae6632c6ce7e592233dff0
         ),
     );
 
+    public static $prefixesPsr0 = array (
+        'P' => 
+        array (
+            'Parsedown' => 
+            array (
+                0 => __DIR__ . '/..' . '/erusev/parsedown',
+            ),
+        ),
+    );
+
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         '©' => __DIR__ . '/..' . '/symfony/cache/Traits/ValueWrapper.php',
@@ -81,6 +91,7 @@ class ComposerStaticInit6c76dd7726ae6632c6ce7e592233dff0
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit6c76dd7726ae6632c6ce7e592233dff0::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit6c76dd7726ae6632c6ce7e592233dff0::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit6c76dd7726ae6632c6ce7e592233dff0::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit6c76dd7726ae6632c6ce7e592233dff0::$classMap;
 
         }, null, ClassLoader::class);

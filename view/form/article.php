@@ -1,4 +1,4 @@
-<form method="post" action="article" class="hide" id="formArticle">
+<form method="post" action="<?php print SITE_URL;?>/articles" class="hide" id="formArticle">
     <label for="message">
         <a href="javascript:void();" onclick="showFormMessage();"><?php __('Mensagem');?></a>
     </label>

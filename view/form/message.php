@@ -1,4 +1,4 @@
-<form method="post" action="messages" id="formMessage">
+<form method="post" action="<?php print SITE_URL;?>/messages" id="formMessage">
     <label for="message"><?php __('Mensagem');?></label>
     /
     <label for="articleMessage">
