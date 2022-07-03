@@ -7,6 +7,7 @@ $data=[
 view('inc/head', $data);
 print '<h1>'.$title.'</h1>';
 view('form/message');
+view('form/article');
 if ($messages) {
     foreach ($messages as $message) {
         print '<hr><p>'.e($message['message'],false).'</p>';

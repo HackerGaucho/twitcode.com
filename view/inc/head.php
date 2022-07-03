@@ -5,6 +5,7 @@
 	</title>
 	<?php
     asset([
+		'css/style.css',
         'js/jquery-3.6.0.min.js',
         'js/jquery.pjax.min.js',
 		'js/loadingoverlay.min.js',

@@ -4,6 +4,14 @@ function hideLoader(sel) {
     }
     $(sel).LoadingOverlay("hide");
 }
+function showFormArticle() {
+    $('#formMessage').hide();
+    $('#formArticle').show();
+}
+function showFormMessage() {
+    $('#formArticle').hide();
+    $('#formMessage').show();
+}
 function showLoader(sel) {
     if (!sel) {
         sel = 'body';

@@ -1,5 +1,10 @@
-<form method="post" action="messages">
-    <label for="message"><?php __('Mensagem');?></label><br>
+<form method="post" action="messages" id="formMessage">
+    <label for="message"><?php __('Mensagem');?></label>
+    /
+    <label for="article">
+        <a href="javascript:void();" onclick="showFormArticle();"><?php __('Artigo');?></a>
+    </label>
+    <br>
     <textarea cols="50" rows="3" name="message" id="message"></textarea><br>
     <button type="submit"><?php __('Enviar');?></button>
 </form>
