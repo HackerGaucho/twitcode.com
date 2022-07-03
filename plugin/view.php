@@ -16,7 +16,7 @@ function view($name, $data=[], $print=true)
             return $output;
         }
     } else {
-        $str='touch <b>'.$filename.'</b>';
+        $str='view <b>'.$name.'</b> not found';
         die($str);
     }
 }
