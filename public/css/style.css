@@ -4,6 +4,8 @@
 }
 
 /* tags */
+input[type=email],
+input[type=password],
 input[type=text],
 textarea {
     width: 500px;
