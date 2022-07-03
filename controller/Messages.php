@@ -20,7 +20,8 @@ class Messages
     {
         $message=[
             'message'=>$_POST['message'],
-            'created_at'=>time()
+            'created_at'=>time(),
+            'type'=>'message'
         ];
         db()->insert('messages', $message);
         header('Location: /');

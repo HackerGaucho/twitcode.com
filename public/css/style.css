@@ -1,3 +1,10 @@
-.hide{
-    display:none;
+/* classes */
+.hide {
+    display: none;
+}
+
+/* tags */
+input[type=text],
+textarea {
+    width: 500px;
 }
