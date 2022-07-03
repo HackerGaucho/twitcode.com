@@ -1,5 +1,6 @@
 id
 message
 article
+article_html
 created_at
 type

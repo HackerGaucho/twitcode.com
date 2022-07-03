@@ -4,9 +4,11 @@ class Articles
 {
     public function post()
     {
+        $article=$_POST['article'];
         $message=[
             'message'=>$_POST['message'],
-            'article'=>$_POST['article'],
+            'article'=>$article,
+            'article_html'=>markdown($article),
             'created_at'=>time(),
             'type'=>'article'
         ];
