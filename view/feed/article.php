@@ -1,6 +1,6 @@
 <?php
 
-$href='/messages/'.$message['id'];
+$href='/articles/'.$message['id'];
 print '<hr><p><b>';
 print '<a href="'.$href.'">';
 e($message['message']);

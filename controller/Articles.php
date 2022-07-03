@@ -2,6 +2,19 @@
 
 class Articles
 {
+    function get(){
+        $messageId=segment(2);
+        $where=[
+            'id'=>$messageId
+        ];
+        $message=db()->get('messages', '*', $where);
+        if($message){
+            $data=[
+                'message'=>$message
+            ];
+            view('article', $data);
+        }
+    }
     public function post()
     {
         $article=$_POST['article'];
