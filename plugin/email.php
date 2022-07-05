@@ -4,7 +4,10 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 function email($body, $subject, $to, $toName, $fromName = false, $fromMail = false)
-{// composer require phpmailer/phpmailer
+{
+    // composer require phpmailer/phpmailer
+    // https://nilhcem.github.io/FakeSMTP/downloads/fakeSMTP-latest.zip
+    // java -jar fakeSMTP-2.0.jar -p 2525
     $mail=new PHPMailer();
     $mail->CharSet = 'UTF-8';
     if (SMTP_TYPE=='smtp') {
