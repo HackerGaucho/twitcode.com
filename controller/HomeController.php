@@ -1,6 +1,8 @@
 <?php
 
-class Home
+namespace controller;
+
+class HomeController
 {
     public function get()
     {

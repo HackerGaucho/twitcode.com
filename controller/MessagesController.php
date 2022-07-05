@@ -1,6 +1,8 @@
 <?php
 
-class Messages
+namespace controller;
+
+class MessagesController
 {
     public function get()
     {
@@ -9,7 +11,7 @@ class Messages
             'id'=>$messageId
         ];
         $message=db()->get('messages', '*', $where);
-        if($message){
+        if ($message) {
             $data=[
                 'message'=>$message
             ];

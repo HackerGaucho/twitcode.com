@@ -1,14 +1,17 @@
 <?php
 
-class Articles
+namespace controller;
+
+class ArticlesController
 {
-    function get(){
+    public function get()
+    {
         $messageId=segment(2);
         $where=[
             'id'=>$messageId
         ];
         $message=db()->get('messages', '*', $where);
-        if($message){
+        if ($message) {
             $data=[
                 'message'=>$message
             ];

@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '6a1e4496a8ee8d4bc02d71684b5c27f493953f28',
+        'reference' => 'a40c0cf754b69419fec66097acd0219362e081ff',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '6a1e4496a8ee8d4bc02d71684b5c27f493953f28',
+            'reference' => 'a40c0cf754b69419fec66097acd0219362e081ff',
             'dev_requirement' => false,
         ),
         'catfan/medoo' => array(
@@ -35,6 +35,15 @@
             'install_path' => __DIR__ . '/../erusev/parsedown',
             'aliases' => array(),
             'reference' => 'cb17b6477dfff935958ba01325f2e8a2bfa6dab3',
+            'dev_requirement' => false,
+        ),
+        'phpmailer/phpmailer' => array(
+            'pretty_version' => 'v6.6.3',
+            'version' => '6.6.3.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../phpmailer/phpmailer',
+            'aliases' => array(),
+            'reference' => '9400f305a898f194caff5521f64e5dfa926626f3',
             'dev_requirement' => false,
         ),
         'phpmyadmin/motranslator' => array(

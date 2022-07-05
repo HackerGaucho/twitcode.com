@@ -7,6 +7,14 @@ namespace Composer\Autoload;
 class ComposerStaticInit6c76dd7726ae6632c6ce7e592233dff0
 {
     public static $prefixLengthsPsr4 = array (
+        'm' => 
+        array (
+            'model\\' => 6,
+        ),
+        'c' => 
+        array (
+            'controller\\' => 11,
+        ),
         'S' => 
         array (
             'Symfony\\Contracts\\Service\\' => 26,
@@ -21,6 +29,7 @@ class ComposerStaticInit6c76dd7726ae6632c6ce7e592233dff0
             'Psr\\Container\\' => 14,
             'Psr\\Cache\\' => 10,
             'PhpMyAdmin\\MoTranslator\\' => 24,
+            'PHPMailer\\PHPMailer\\' => 20,
         ),
         'M' => 
         array (
@@ -29,6 +38,14 @@ class ComposerStaticInit6c76dd7726ae6632c6ce7e592233dff0
     );
 
     public static $prefixDirsPsr4 = array (
+        'model\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/model',
+        ),
+        'controller\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/controller',
+        ),
         'Symfony\\Contracts\\Service\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/service-contracts',
@@ -64,6 +81,10 @@ class ComposerStaticInit6c76dd7726ae6632c6ce7e592233dff0
         'PhpMyAdmin\\MoTranslator\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpmyadmin/motranslator/src',
+        ),
+        'PHPMailer\\PHPMailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
         ),
         'Medoo\\' => 
         array (

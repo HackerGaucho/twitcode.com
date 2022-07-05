@@ -3,7 +3,7 @@
 use PhpMyAdmin\MoTranslator\Loader;
 
 function __($in, $print=true)
-{
+{// composer require phpmyadmin/motranslator
     $loader = new Loader();
     $loader->setlocale(DEFAULT_LANGUAGE);
     $loader->textdomain('i18n');

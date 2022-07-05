@@ -3,7 +3,7 @@
 use Medoo\Medoo;
 
 function db()
-{
+{// composer require catfan/medoo
     return new Medoo([
         'type' => 'mysql',
         'host' => MYSQL_HOST,

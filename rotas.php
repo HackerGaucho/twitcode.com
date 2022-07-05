@@ -8,11 +8,10 @@ $str=segment(1);
 if ($str=='/') {
     $str='home';
 }
-$str=ucfirst($str);
-$filename=__DIR__.'/controller/'.$str.'.php';
-if (ctype_alpha($str) and file_exists($filename)) {
-    require $filename;
-    $obj=new $str();
+$class=ucfirst($str).'Controller';
+$className='controller\\'.$class;
+if (ctype_alpha($str) and class_exists($className)) {
+    $obj=new $className();
     $str=$_SERVER['REQUEST_METHOD'];
     if ($str=='POST') {
         $str='post';
