@@ -2,19 +2,19 @@
 
 namespace controller;
 
-use model\UserModel;
+use model\UsersModel;
 
 class SigninController
 {
     public $error=[];
     public function usingEmailAndPassword($email, $password, $url='')
     {
-        $UserModel=new UserModel();
+        $UsersModel=new UsersModel();
         $email=mb_strtolower(trim($email));
         $where=[
             'email'=>$email
         ];
-        $user=$UserModel->read($where);
+        $user=$UsersModel->read($where);
         $passwordOk=false;
         if ($user) {
             if (password_verify($password, $user['password'])) {
@@ -39,7 +39,7 @@ class SigninController
             $where=[
                 'id'=>$user['id']
             ];
-            $UserModel->update($data, $where);
+            $UsersModel->update($data, $where);
             if (
                 setcookie('userId', $user['id'], $tokenExpiration) and
                 setcookie('userToken', $token, $tokenExpiration)
