@@ -2,7 +2,7 @@
 
 namespace model;
 
-class UserModel
+class UsersModel
 {
     public $db;
     public function __construct()

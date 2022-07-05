@@ -4,7 +4,7 @@ $title=e($message['message'], false);
 $data=[
     'title'=>$title
 ];
-view('inc/head', $data);
+view('inc/header', $data);
 print '<h1>'.$title.'</h1>';
 print '<small>'.date('r', $message['created_at']).'</small>';
 ?>

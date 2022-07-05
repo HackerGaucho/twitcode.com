@@ -1,6 +1,6 @@
 <?php
 $title=__('Erro', false);
-require 'inc/header.php';
+view('inc/header', ['title'=>$title]);
 ?>
 <div class="container">
     <main class="feed">
@@ -13,9 +13,18 @@ require 'inc/header.php';
             switch ($errorCode) {
                 case 'invalidArticle':
                     $msg=__('Artigo inválido', false);
-                    break;                
+                    break;
+                case 'invalidEmail':
+                    $msg=__('Email inválido', false);
+                    break;
                 case 'invalidMessage':
                     $msg=__('Mensagem inválida', false);
+                    break;
+                case 'invalidName':
+                    $msg=__('Nome inválido', false);
+                    break;
+                case 'invalidPassword':
+                    $msg=__('Senha inválida', false);
                     break;
                 default:
                     $msg=__('Erro desconhecido', false);

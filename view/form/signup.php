@@ -5,15 +5,15 @@
     <label for="name">
         <?php __('Nome');?>
     </label><br>
-    <input type="text" name="name" id="name"><br>
+    <input type="text" name="name" id="name" minlength="2" maxlength="32" required="required"><br>
     <label for="email">
         <?php __('Email');?>
     </label><br>
-    <input type="email" name="email" id="email"><br>
+    <input type="email" name="email" id="email" minlength="6" maxlength="64" required="required"><br>
     <label for="password">
         <?php __("Senha");?>
     </label><br>
-    <input type="password" name="password" id="password"><br>
+    <input type="password" name="password" id="password" minlength="8" maxlength="256" required="required"><br>
     <button type="submit">
         <?php __('Criar conta');?>
     </button>
