@@ -7,6 +7,12 @@ use model\UsersModel;
 class SigninController
 {
     public $error=[];
+    public function post()
+    {
+        $email=$_POST['email'];
+        $password=$_POST['password'];
+        $this->usingEmailAndPassword($email, $password);
+    }
     public function usingEmailAndPassword($email, $password, $url='')
     {
         $UsersModel=new UsersModel();
