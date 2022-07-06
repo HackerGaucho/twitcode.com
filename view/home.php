@@ -6,4 +6,5 @@ $data=[
 ];
 view('inc/header', $data);
 print '<h1>'.$title.'</h1>';
+view('form/signin');
 view('form/signup');

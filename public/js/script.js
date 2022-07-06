@@ -18,6 +18,14 @@ function showLoader(sel) {
     }
     $(sel).LoadingOverlay("show");
 }
+function showFormSignin() {
+    $('#formSignup').hide();
+    $('#formSignin').show();
+}
+function showFormSignup() {
+    $('#formSignin').hide();
+    $('#formSignup').show();
+}
 $(document).pjax('a', 'body');
 // $(document).on('submit', 'form', function (event) {
 //     $.pjax.submit(event, 'body')

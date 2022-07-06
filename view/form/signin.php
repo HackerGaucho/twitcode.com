@@ -1,12 +1,7 @@
-<form action="<?php print SITE_URL;?>/signup" method="post"
-    id="formSignup" class="hide">
+<form action="<?php print SITE_URL;?>/signin" method="post" id="formSignin">
     <h2>
-        <?php __('Criar conta');?>
+        <?php __('Entrar');?>
     </h2>
-    <label for="name">
-        <?php __('Nome');?>
-    </label><br>
-    <input type="text" name="name" id="name" minlength="2" maxlength="32" required="required"><br>
     <label for="email">
         <?php __('Email');?>
     </label><br>
@@ -16,9 +11,9 @@
     </label><br>
     <input type="password" name="password" id="password" minlength="8" maxlength="256" required="required"><br>
     <button type="submit">
-        <?php __('Criar conta');?>
+        <?php __('Entrar');?>
     </button>
     <p>
-        <a href="javascript:showFormSignin();"><?php __('Entrar');?></a>
+        <a href="javascript:showFormSignup();"><?php __('Criar conta');?></a>
     </p>
 </form>
