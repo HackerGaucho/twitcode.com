@@ -51,7 +51,7 @@ class SigninController
                 setcookie('userToken', $token, $tokenExpiration)
             ) {
                 if (empty($url)) {
-                    $url=SITE_URL.'/user.php?id='.$user['id'];
+                    $url=SITE_URL.'/users/'.$user['id'];
                 }
                 header('Location: '.$url);
             } else {
