@@ -8,8 +8,4 @@ view('inc/header', $data);
 print '<h1>'.$title.'</h1>';
 view('form/message');
 view('form/article');
-if ($messages) {
-    foreach ($messages as $message) {
-        view('feed/'.$message['type'], ['message'=>$message]);
-    }
-}
+view('loop/messages', ['messages'=>$messages]);
