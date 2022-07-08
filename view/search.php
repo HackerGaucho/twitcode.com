@@ -1,6 +1,6 @@
 <?php
 
-$title=__('Resultados da busca', false);
+$title=__('Resultados da pesquisa', false);
 $data=[
     'title'=>$title
 ];
