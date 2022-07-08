@@ -122,6 +122,7 @@ class SignupController
     {
         if (count($this->error)>=1) {
             $data=[
+                'isAuth'=>isAuth(),
                 'error'=>$this->error
             ];
             view('error', $data);

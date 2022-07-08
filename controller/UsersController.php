@@ -31,6 +31,7 @@ class UsersController
         ];
         $messages=db()->select('messages', '*', $where);
         $data=[
+            'isAuth'=>isAuth(),
             'messages'=>$messages
         ];
         view("user", $data);

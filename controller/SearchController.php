@@ -12,6 +12,7 @@ class SearchController
         $q=$_GET['q'];
         $messages=$SearchModel->buscar($q);
         $data=[
+            'isAuth'=>isAuth(),
             'messages'=>$messages
         ];
         view('search', $data);

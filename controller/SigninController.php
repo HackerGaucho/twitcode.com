@@ -59,6 +59,7 @@ class SigninController
             }
         } else {
             $data=[
+                'isAuth'=>isAuth(),
                 'error'=>$this->error
             ];
             view('error', $data);

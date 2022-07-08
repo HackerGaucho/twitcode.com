@@ -13,6 +13,7 @@ class MessagesController
         $message=db()->get('messages', '*', $where);
         if ($message) {
             $data=[
+                'isAuth'=>isAuth(),
                 'message'=>$message
             ];
             view('message', $data);

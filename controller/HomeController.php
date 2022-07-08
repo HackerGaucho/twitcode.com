@@ -6,6 +6,9 @@ class HomeController
 {
     public function get()
     {
-        view("home");
+        $data=[
+            'isAuth'=>isAuth()
+        ];
+        view("home", $data);
     }
 }

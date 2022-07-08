@@ -13,6 +13,7 @@ class ArticlesController
         $message=db()->get('messages', '*', $where);
         if ($message) {
             $data=[
+                'isAuth'=>isAuth(),
                 'message'=>$message
             ];
             view('article', $data);

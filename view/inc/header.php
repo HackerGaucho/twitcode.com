@@ -37,18 +37,30 @@ HERE BE DRAGONS!
                                               ~~~~
 --->
 <head>
-	<meta charset="utf-8">
-	<title><?php print htmlentities($title);?>
-	</title>
-	<?php
+  <meta charset="utf-8">
+  <title><?php print htmlentities($title);?>
+  </title>
+  <?php
     asset([
-		'css/style.css',
+        'css/style.css',
         'js/jquery-3.6.0.min.js',
         'js/jquery.pjax.min.js',
-		'js/loadingoverlay.min.js',
-		'js/script.js'
+        'js/loadingoverlay.min.js',
+        'js/script.js'
     ]);
     ?>
 </head>
 <body>
-  <?php view("form/search");?>
+  <div class="top">
+    <?php
+  print '<h1><a href="/">'.e(SITE_NAME, false).'</a></h1>';
+    view("form/search");
+    if (isset($isAuth) and $isAuth) {
+        print '<b>';
+        print $isAuth['name'];
+        print '</b> &bull; ';
+        $href=SITE_URL."/logout?tokenExpiration=".$isAuth['token_expiration'];
+        print '<a href="'.$href.'">'.__('Sair', false).'</a>';
+    }
+    ?>
+  </div>
