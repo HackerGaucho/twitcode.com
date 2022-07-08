@@ -51,3 +51,4 @@ HERE BE DRAGONS!
     ?>
 </head>
 <body>
+  <?php view("form/search");?>
