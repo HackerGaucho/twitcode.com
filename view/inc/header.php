@@ -48,19 +48,27 @@ HERE BE DRAGONS!
         'js/loadingoverlay.min.js',
         'js/script.js'
     ]);
-    ?>
+  ?>
 </head>
 <body>
-  <div class="top">
-    <?php
+  <header>
+    <section>
+      <?php
   print '<h1><a href="/">'.e(SITE_NAME, false).'</a></h1>';
+  ?>
+    </section>
+    <section>
+      <?php
     view("form/search");
-    if (isset($isAuth) and $isAuth) {
-        print '<b>';
-        print $isAuth['name'];
-        print '</b> &bull; ';
-        $href=SITE_URL."/logout?tokenExpiration=".$isAuth['token_expiration'];
-        print '<a href="'.$href.'">'.__('Sair', false).'</a>';
-    }
-    ?>
-  </div>
+  ?>
+    </section>
+    <?php
+  if (isset($isAuth) and $isAuth) {
+      print '<section><b>';
+      print $isAuth['name'];
+      print '</b> &bull; ';
+      $href=SITE_URL."/logout?tokenExpiration=".$isAuth['token_expiration'];
+      print '<a href="'.$href.'">'.__('Sair', false).'</a></section>';
+  }
+  ?>
+  </header>

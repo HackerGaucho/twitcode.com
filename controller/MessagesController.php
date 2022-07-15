@@ -16,7 +16,7 @@ class MessagesController
                 'isAuth'=>isAuth(),
                 'message'=>$message
             ];
-            view('message', $data);
+            view('messages', $data);
         }
     }
     public function post()

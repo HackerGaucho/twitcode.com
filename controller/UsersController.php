@@ -34,6 +34,6 @@ class UsersController
             'isAuth'=>isAuth(),
             'messages'=>$messages
         ];
-        view("user", $data);
+        view("users", $data);
     }
 }
